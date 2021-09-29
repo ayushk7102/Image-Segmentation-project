@@ -1,7 +1,8 @@
 # Image-Segmentation-project
 This repository is meant for a drone flying 200 ft above ground and taking pictures of letters and shapes in the ground. It is part of the codebase for AUVSI SUAS competition.
 The objective is to identify the letter, the shape and the colour of the letter and the shape in the image.
-![Example Image] (https://github.com/NeetigyaPod/Image-Segmentation-project/blob/main/circle_A_8.jpg)
+
+![circle_A_8](https://user-images.githubusercontent.com/47060152/135219397-3f0004a1-1cc6-4500-b6d9-eab2f244e381.jpg)
 
 An image of a letter contained inside a shape is given as as input. The following algorithm segments out the letter as well as the shape using modified KMeans that clusters on HLS colour space along with X-Y coordinated to take proximity into consideration as well. The segmentation results are in Mask_Returners.ipynb for you to look at. These masks are then given to the classifiers to identify. The colour segmented image is given to the colour-detection module that uses euclidean distance in HLS colour space to identify the colour.
 
